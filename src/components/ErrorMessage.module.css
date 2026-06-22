@@ -1,0 +1,29 @@
+.errorBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 28px 32px;
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 24px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.iconWrap {
+  padding: 12px;
+  background: rgba(239, 68, 68, 0.2);
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.icon { color: #F87171; font-size: 1.6rem; }
+
+.content { flex: 1; }
+
+.title { font-size: 1.05rem; font-weight: 600; color: #FECACA; margin-bottom: 6px; }
+
+.message { font-size: 0.9rem; color: rgba(255,255,255,0.6); line-height: 1.6; margin-bottom: 10px; }
+
+.hint { font-size: 0.82rem; color: rgba(255,255,255,0.4); }
+.hint strong { color: rgba(255,255,255,0.75); }

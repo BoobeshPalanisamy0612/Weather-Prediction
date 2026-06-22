@@ -1,0 +1,44 @@
+.wrapper { display: flex; flex-direction: column; gap: 20px; width: 100%; }
+
+.card {
+  padding: 32px;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 24px;
+}
+
+.topRow { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+.left { flex: 1; }
+.right { flex-shrink: 0; }
+
+.circle { width: 140px; height: 140px; border-radius: 50%; }
+.line { border-radius: 8px; }
+
+.divider { height: 1px; background: rgba(255,255,255,0.08); margin: 24px 0; }
+
+.statsGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+.statSkeleton {
+  display: flex; align-items: flex-start; gap: 10px; padding: 14px;
+  background: rgba(255,255,255,0.05); border-radius: 14px;
+}
+
+.statIcon { width: 26px; height: 26px; border-radius: 6px; flex-shrink: 0; }
+
+.forecastCard { padding: 28px 32px; background: rgba(0,0,0,0.3); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255,255,255,0.15); border-radius: 24px; }
+
+.forecastGrid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+
+.forecastTile {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  padding: 16px 10px; background: rgba(255,255,255,0.05); border-radius: 16px;
+}
+
+.forecastIcon { width: 48px; height: 48px; border-radius: 50%; }
+
+@media (max-width: 768px) {
+  .statsGrid { grid-template-columns: repeat(2, 1fr); }
+  .forecastGrid { grid-template-columns: repeat(3, 1fr); }
+}
